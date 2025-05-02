@@ -109,7 +109,7 @@ RegisterNUICallback('thermitesuccess', function(_, cb)
         local time = 3
         local coords = GetEntityCoords(cache.ped)
         while time > 0 do
-            exports.qbx_core:Notify(locale('general.thermite_detonating_in_seconds', {time = time}))
+            exports.qbx_core:Notify(locale('general.thermite_detonating_in_seconds', time))
             Wait(1000)
             time -= 1
         end
